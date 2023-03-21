@@ -1,0 +1,14 @@
+<!ELEMENT mailpiece (attn?, recipient_line, delivery_address_line, last_line)>
+  <!ELEMENT attn (#PCDATA)>
+  <!ELEMENT recipient_line (#PCDATA)>
+  <!ELEMENT delivery_address_line (primary_address_number, predirectional?, street_name, suffix, postdirectional?, secondary_address_identifier?, secondary_address?)>
+    <!ELEMENT primary_address_number (#PCDATA)>
+    <!ELEMENT predirectional (#PCDATA)>
+    <!ELEMENT street_name (#PCDATA)>
+    <!ELEMENT suffix (#PCDATA)>
+    <!ELEMENT postdirectional (#PCDATA)>
+    <!ELEMENT secondary_address_identifier (#PCDATA)>
+    <!ELEMENT secondary_address (#PCDATA)>
+    
+  <!ELEMENT last_line (#PCDATA)>
+  

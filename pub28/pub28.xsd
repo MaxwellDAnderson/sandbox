@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="https://www.w3schools.com" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[ 
+        
+        This schema is based almost exclusively on the United States Postal Service's
+        Publication 28, which can be found at: 
+        https://pe.usps.com/cpim/ftp/pubs/pub28/pub28.pdf
+        https://web.archive.org/web/20230320045845/https://pe.usps.com/cpim/ftp/pubs/pub28/pub28.pdf
+
+        I also consulted this article on the ArcGIS website: 
+        https://desktop.arcgis.com/en/arcmap/latest/manage-data/geocoding/what-is-an-address.htm
+        https://web.archive.org/web/20230320050309/https://desktop.arcgis.com/en/arcmap/latest/manage-data/geocoding/what-is-an-address.htm
+
+      ]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:element name="mailpiece">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="attn" type="xs:string" />
+        <xs:element name="recipient_line" type="xs:string" />
+        <xs:element name="delivery_address_line">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="primary_address_number" minOccurs="1" maxOccurs="1" />
+              <xs:element name="predirectional" minOccurs="0" maxOccurs="1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="(N[W|E])|(S[W|E])|([NSEW])|()" />
+                    <xs:minLength value="0" />
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="street_name" minOccurs="1" maxOccurs="1" />
+              <xs:element name="suffix" minOccurs="1" maxOccurs="1" />
+              <xs:element name="postdirectional" minOccurs="0" maxOccurs="1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="(N[W|E])|(S[W|E])|([NSEW])|()" />
+                    <xs:minLength value="0" />
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="secondary_address_identifier" minOccurs="0" maxOccurs="1" />
+              <xs:element name="secondary_address" minOccurs="0" maxOccurs="1" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

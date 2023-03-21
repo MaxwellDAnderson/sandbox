@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mailpiece SYSTEM "pub28.dtd">
+
+<mailpiece>
+  <attn></attn>
+  <recipient_line></recipient_line>
+  <delivery_address_line>
+    <primary_address_number>102</primary_address_number>
+    <predirectional></predirectional>
+    <street_name>
+      <!--
+        Punctuation is normally limited to periods, slashes, and hyphens:
+        Periods: 39.2 RD
+        Slashes (fractional addresses): 33 1/2 AVE
+        Hyphens (hyphenated addresses): 289-01 MID-ISLAND PLZ (preferred MID ISLAND PLZ)
+          * Note: hyphens in the address range (289-01) are
+            significant and not removed. However, hyphens in the
+            street or city name normally are not significant and
+            may be replaced with a space.
+      -->
+    </street_name>
+    <suffix>[street type]</suffix>
+    <postdirectional></postdirectional>
+    <secondary_address_identifier></secondary_address_identifier>
+    <secondary_address></secondary_address>
+  </delivery_address_line>
+  <last_line></last_line>
+</mailpiece>
