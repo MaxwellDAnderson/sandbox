@@ -20,8 +20,8 @@
   <xs:element name="mailpiece">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="attn" type="xs:string" />
-        <xs:element name="recipient_line" type="xs:string" />
+        <xs:element name="attn" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xs:element name="recipient_line" type="xs:string" minOccurs="1" maxOccurs="1" />
         <xs:element name="delivery_address_line">
           <xs:complexType>
             <xs:sequence>
@@ -48,6 +48,80 @@
               </xs:element>
               <xs:element name="secondary_address_identifier" minOccurs="0" maxOccurs="1" />
               <xs:element name="secondary_address" minOccurs="0" maxOccurs="1" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="last_line">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="city" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="state">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="AL" />  <!-- Alabama -->
+                    <xs:enumeration value="AK" />  <!-- Alaska -->
+                    <xs:enumeration value="AS" />  <!-- American Samoa -->
+                    <xs:enumeration value="AZ" />  <!-- Arizona -->
+                    <xs:enumeration value="AR" />  <!-- Arkansas -->
+                    <xs:enumeration value="CA" />  <!-- California -->
+                    <xs:enumeration value="CO" />  <!-- Colorado -->
+                    <xs:enumeration value="CT" />  <!-- Connecticut -->
+                    <xs:enumeration value="DE" />  <!-- Delaware -->
+                    <xs:enumeration value="DC" />  <!-- District of Columbia -->
+                    <xs:enumeration value="FM" />  <!-- Federated States of Micronesia -->
+                    <xs:enumeration value="FL" />  <!-- Florida -->
+                    <xs:enumeration value="GA" />  <!-- Georgia -->
+                    <xs:enumeration value="GU" />  <!-- Guam -->
+                    <xs:enumeration value="HI" />  <!-- Hawaii -->
+                    <xs:enumeration value="ID" />  <!-- Idaho -->
+                    <xs:enumeration value="IL" />  <!-- Illinois -->
+                    <xs:enumeration value="IN" />  <!-- Indiana -->
+                    <xs:enumeration value="IA" />  <!-- Iowa -->
+                    <xs:enumeration value="KS" />  <!-- Kansas -->
+                    <xs:enumeration value="KY" />  <!-- Kentucky -->
+                    <xs:enumeration value="LA" />  <!-- Louisiana -->
+                    <xs:enumeration value="ME" />  <!-- Maine -->
+                    <xs:enumeration value="MH" />  <!-- Marshall Islands -->
+                    <xs:enumeration value="MD" />  <!-- Maryland -->
+                    <xs:enumeration value="MA" />  <!-- Massachusetts -->
+                    <xs:enumeration value="MI" />  <!-- Michigan -->
+                    <xs:enumeration value="MN" />  <!-- Minnesota -->
+                    <xs:enumeration value="MS" />  <!-- Mississippi -->
+                    <xs:enumeration value="MO" />  <!-- Missouri -->
+                    <xs:enumeration value="MT" />  <!-- Montana -->
+                    <xs:enumeration value="NE" />  <!-- Nebraska -->
+                    <xs:enumeration value="NV" />  <!-- Nevada -->
+                    <xs:enumeration value="NH" />  <!-- New Hampshire -->
+                    <xs:enumeration value="NJ" />  <!-- New Jersey -->
+                    <xs:enumeration value="NM" />  <!-- New Mexico -->
+                    <xs:enumeration value="NY" />  <!-- New York -->
+                    <xs:enumeration value="NC" />  <!-- North Carolina -->
+                    <xs:enumeration value="ND" />  <!-- North Dakota -->
+                    <xs:enumeration value="MP" />  <!-- Northern Mariana Islands -->
+                    <xs:enumeration value="OH" />  <!-- Ohio -->
+                    <xs:enumeration value="OK" />  <!-- Oklahoma -->
+                    <xs:enumeration value="OR" />  <!-- Oregon -->
+                    <xs:enumeration value="PW" />  <!-- Palau -->
+                    <xs:enumeration value="PA" />  <!-- Pennsylvania -->
+                    <xs:enumeration value="PR" />  <!-- Puerto Rico -->
+                    <xs:enumeration value="RI" />  <!-- Rhode Island -->
+                    <xs:enumeration value="SC" />  <!-- South Carolina -->
+                    <xs:enumeration value="SD" />  <!-- South Dakota -->
+                    <xs:enumeration value="TN" />  <!-- Tennessee -->
+                    <xs:enumeration value="TX" />  <!-- Texas -->
+                    <xs:enumeration value="UT" />  <!-- Utah -->
+                    <xs:enumeration value="VT" />  <!-- Vermont -->
+                    <xs:enumeration value="VI" />  <!-- Vergin Islands -->
+                    <xs:enumeration value="VA" />  <!-- Virginia -->
+                    <xs:enumeration value="WA" />  <!-- Washington -->
+                    <xs:enumeration value="WV" />  <!-- West Virginia -->
+                    <xs:enumeration value="WI" />  <!-- Wisconsin -->
+                    <xs:enumeration value="WY" />  <!-- Wyoming -->
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="zip" type="xs:string" />
+              <xs:element name="plus_four" type="xs:string" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
