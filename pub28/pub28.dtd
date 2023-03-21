@@ -9,6 +9,10 @@
     <!ELEMENT postdirectional (#PCDATA)>
     <!ELEMENT secondary_address_identifier (#PCDATA)>
     <!ELEMENT secondary_address (#PCDATA)>
-    
-  <!ELEMENT last_line (#PCDATA)>
+  <!ELEMENT last_line (city, state, zip, plus_four?, country?)>
+    <!ELEMENT city (#PCDATA)>
+    <!ELEMENT state (#PCDATA)>
+    <!ELEMENT zip (#PCDATA)>
+    <!ELEMENT plus_four (#PCDATA)>
+    <!ELEMENT country (#PCDATA)>
   
