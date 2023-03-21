@@ -24,5 +24,11 @@
     <secondary_address_identifier></secondary_address_identifier>
     <secondary_address></secondary_address>
   </delivery_address_line>
-  <last_line></last_line>
+  <last_line>
+    <city></city>
+    <state></state>
+    <zip></zip>
+    <plus_four></plus_four>
+    <country></country>
+  </last_line>
 </mailpiece>
