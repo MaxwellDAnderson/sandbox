@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nac>
+  <title>
+    <num id="nac/t#" />
+    <label />
+    <text />
+    <chapter>
+      <num id="nac/t#/c#" />
+      <label />
+      <text />
+      <section>
+        <num id="nac/t#/c#/s#" />
+        <label />
+        <text />
+      </section>
+    </chapter>
+  </title>
+</nac>
