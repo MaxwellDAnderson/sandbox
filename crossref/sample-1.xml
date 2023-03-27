@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<title id="179">
+  <chapter id="2">
+    <section lvl="1" id="002">
+      <section lvl="2" id="04">
+        <section lvl="3" id="C">
+          <number id="179_nac_2-002.04C">2-002.04C</number>
+          <label>Microbiological</label>
+          <text>The maximum contaminant levels for coliform bacteria, applicable to all public water systems, are as follows:</text>
+          <section lvl="4" id="1">
+            <number id="179_nac_2-002.04C1">2-002.04C5</number> <!-- previous 2-002.04C1 -->
+            <label />
+            <text>Through March 31, 2016, the total coliform MCL is based on the presence or absence of total coliforms in a sample, rather than coliform density</text>
+            <section lvl="5" id="a">
+              <number id="179_nac_2-002.04C1a">2-002.04C1a</number>
+              <label />
+              <text>For a system which collects at least 40 samples per month, if no more than 5.0% of the samples collected during a month are total coliform-positive, the system is in compliance with the MCL for total coliforms.</text>
+            </section>
+            <section lvl="5" id="b">
+              <number id="179_nac_2-002.04C1b">2-002.04C1b</number>
+              <label />
+              <text>For a system which collects fewer than 40 samples per month, if no more than one sample collected during a month is total coliform-positive, the system is in compliance with the MCL for total coliforms.</text>
+            </section>
+            <section lvl="5" id="c">
+              <number id="179_nac_2-002.04C1c">2-002.04C1c</number>
+              <label />
+              <text>Results of all routine samples and repeat samples (when required by 179 NAC <xref type="TNCS" cite="#179_nac_2-002.04C1a">2-002.04C1a</xref> and <xref type="S" cite="#179_nac_2-002.04C1b">2-002.04C1b</xref>.</text>
+            </section>
+          </section>
+          <section lvl="4" id="2">
+            <number id="179_nac_2-002.04C2">2-002.04C2</number>
+            <label />
+            <text>Through March 31, 2016 any fecal coliform-positive repeat sample or E. coli-positive repeat sample, or any total coliform-positive repeat ample following a fecal coliform-positive or E. coli-positive routine sample constitutes a violation of the MCL for total coliforms. For purposes of the public notification requirements in <xref cite="#179_nac_4">179 NAC 4</xref></text>
+          </section>
+          <section lvl="4" id="3">
+            <number id="179_nac_2-002.04C3">2-002.04C3</number>
+            <label />
+            <text>Compliance with the MCL for total coliforms in 179 NAC <xref type="TNCS" cite="#179_nac_2-002.04C1">2-002.04C1</xref> and <xref type="S" cite="#179_nac_2-002.04C2">2-002.04C2</xref> will be determined each month for systems which are required to monitor monthly for total coliforms, and each quarter for systems which are required to monitor once per quarter for total coliforms.</text>
+          </section>
+        </section>
+      </section>
+    </section>
+  </chapter>
+</title>
