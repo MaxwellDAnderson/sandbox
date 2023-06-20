@@ -1,0 +1,32 @@
+ins {
+  background-color:#a0ffa0;
+  text-decoration:underline;
+}
+del {
+  background-color:#ffa0a0;
+  text-decoration:line-through;
+}
+table {
+  table-layout:fixed;
+  width:100%;
+}
+td {
+  vertical-align:top;
+}
+body {
+  padding-left:2in;
+  padding-right:2in;
+}
+.sc {
+  font-variant:small-caps;
+}
+.moved_from {
+  text-decoration-style:double;
+  text-decoration-line:line-through;
+  background-color:#FCFBB7
+}
+.moved_to {
+  text-decoration-style:double;
+  text-decoration-line:underline;
+  background-color:#FCFBB7
+}
