@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <!-- SIMPLE ELEMENTS -->
+  <xs:element name="heading" type="xs:string" />
+  <xs:element name="label" type="xs:string" />
+  <xs:element name="chapeau" type="xs:string" />
+  <xs:element name="xref" type="xs:string" />
+  
+  <!-- ATTRIBUTES -->
+  <xs:attribute name="id" type="xs:string" />
+  <xs:attribute name="href" type="xs:string" />
+  
+  <!-- COMPLEX ELEMENTS -->
+  <xs:element name="text">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="xref" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- SIMPLE TYPES -->
+  <xs:simpleType name="TitleIdRestrict">
+    <xs:restriction base="xs:string">
+      <!-- 100 NAC -->
+      <xs:pattern value="\/nac\/(([1-9])([0-9]{0,2}))" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TitleTextRestrict">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(([1-9])([0-9]{0,2}))" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ChapterNumIdRestrict">
+    <xs:restriction base="xs:string">
+      <!-- 100 NAC 1 -->
+      <xs:pattern value="\/nac\/(([1-9])([0-9]{0,2}))\/(([1-9])([0-9]{0,2}))" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ChapterNumTextRestrict">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(([1-9])([0-9]{0,2}))" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="SectionNumIdRestrict">
+    <xs:restriction base="xs:string">
+      <!-- 100 NAC 1.1 -->
+      <xs:pattern value="\/nac\/(([1-9])([0-9]{0,2}))\/(([1-9])([0-9]{0,2}))\/(([1-9])([0-9]{0,2}))" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="SectionNumTextRestrict">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(([1-9])([0-9]{0,2})\.([1-9])([0-9]{0,2}))" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="SubsectionNumIdRestrict">
+    <xs:restriction base="xs:string">
+      <!-- 100 NAC 1.1(a) -->
+      <xs:pattern value="\/nac\/([0-9]{1,3})\/([0-9]{1,3})\/([0-9]{1,3})\/([a-z]{1,2})" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="SubsectionNumTextRestrict">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(([1-9])([0-9]{0,2}))\.([1-9])([0-9]{0,2})(\([a-z]{1,2}\))" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ParagraphNumIdRestrict">
+    <xs:restriction base="xs:string">
+      <!-- 100 NAC 1.1(a)(1) -->
+      <xs:pattern value="\/nac\/(([1-9])([0-9]{0,2}))\/(([1-9])([0-9]{0,2}))\/(([1-9])([0-9]{0,2}))\/([a-z]{1,2})\/(([1-9])([0-9]{0,2}))" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="SubparagraphNumIdRestrict">
+    <xs:restriction base="xs:string">
+      <!-- 100 NAC 1.1(a)(1)(i) -->
+      <xs:pattern value="\/nac\/([0-9]{1,3})\/([0-9]{1,3})\/([0-9]{1,3})\/([a-z]{1,2})\/([0-9]{1,2})\/([ixv]{1,4})" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ClauseNumIdRestrict">
+    <xs:restriction base="xs:string">
+      <!-- 100 NAC 1.1(a)(1)(i)(A) -->
+      <xs:pattern value="\/nac\/([0-9]{1,3})\/([0-9]{1,3})\/([0-9]{1,3})\/([a-z]{1,2})\/([0-9]{1,2})\/([ixv]{1,4})\/([A-Z]{1,2})" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="SubclauseNumIdRestrict">
+    <xs:restriction base="xs:string">
+      <!-- 100 NAC 1.1(a)(1)(i)(A)(1) -->
+      <xs:pattern value="\/nac\/([0-9]{1,3})\/([0-9]{1,3})\/([0-9]{1,3})\/([a-z]{1,2})\/([0-9]{1,2})\/([ixv]{1,4})\/([A-Z]{1,2})\/([0-9]{1,2})" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ItemNumIdRestrict">
+    <xs:restriction base="xs:string">
+      <!-- 100 NAC 1.1(a)(1)(i)(A)(1)(i) -->
+      <xs:pattern value="\/nac\/([0-9]{1,3})\/([0-9]{1,3})\/([0-9]{1,3})\/([a-z]{1,2})\/([0-9]{1,2})\/([ixv]{1,4})\/([A-Z]{1,2})\/([0-9]{1,2})\/([ivx]{1,4})" />
+    </xs:restriction>
+  </xs:simpleType>
+
+
+
+  <xs:element name="nac">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="title">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="num">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="TitleIdRestrict">
+                      <xs:attribute name="id" type="xs:string" use="required" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

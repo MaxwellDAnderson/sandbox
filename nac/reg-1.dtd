@@ -1,0 +1,49 @@
+<!ELEMENT nac (title+)>
+  <!ELEMENT title (num, heading?, chapeau?, chapter+)>
+    <!ELEMENT num (#PCDATA)>
+    <!ATTLIST num id ID #REQUIRED>
+    <!ELEMENT heading (#PCDATA)>
+    <!ELEMENT chapeau (#PCDATA)>
+    <!ELEMENT chapter (num, heading?, chapeau?, section+)>
+      <!ELEMENT num (#PCDATA)>
+      <!ATTLIST num id ID #REQUIRED>
+      <!ELEMENT heading (#PCDATA)>
+      <!ELEMENT chapeau (#PCDATA)>
+      <!ELEMENT section (num, label?, text?, subsection*, flush-text?)>
+        <!ELEMENT num (#PCDATA)>
+        <!ATTLIST num id ID #REQUIRED>
+        <!ELEMENT label (#PCDATA)>
+        <!ELEMENT text (#PCDATA)>
+        <!ELEMENT flush-text (#PCDATA)>
+        <!ELEMENT subsection (num, label?, text?, paragraph*, flush-text?)>
+          <!ELEMENT num (#PCDATA)>
+          <!ATTLIST num id ID #REQUIRED>
+          <!ELEMENT label (#PCDATA)>
+          <!ELEMENT text (#PCDATA)>
+          <!ELEMENT flush-text (#PCDATA)>
+          <!ELEMENT paragraph (num, label?, text?, subparagraph*, flush-text?)>
+            <!ELEMENT num (#PCDATA)>
+            <!ATTLIST num id ID #REQUIRED>
+            <!ELEMENT label (#PCDATA)>
+            <!ELEMENT text (#PCDATA)>
+            <!ELEMENT flush-text (#PCDATA)>
+            <!ELEMENT subparagraph (num, label?, text?, clause*, flush-text?)>
+              <!ELEMENT num (#PCDATA)>
+              <!ATTLIST num id ID #REQUIRED>
+              <!ELEMENT label (#PCDATA)>
+              <!ELEMENT text (#PCDATA)>
+              <!ELEMENT flush-text (#PCDATA)>
+              <!ELEMENT clause (num, label?, text?, clause*, flush-text?)>
+                <!ELEMENT num (#PCDATA)>
+                <!ATTLIST num id ID #REQUIRED>
+                <!ELEMENT label (#PCDATA)>
+                <!ELEMENT text (#PCDATA)>
+                <!ELEMENT flush-text (#PCDATA)>
+                <!ELEMENT subclause (num, label?, text?, flush-text?)>
+                  <!ELEMENT num (#PCDATA)>
+                  <!ATTLIST num id ID #REQUIRED>
+                  <!ELEMENT label (#PCDATA)>
+                  <!ELEMENT text (xref*)>
+                    <!ELEMENT xref (#PCDATA)>
+                    <!ATTLIST xref href IDREF #REQUIRED>
+                  <!ELEMENT flush-text (#PCDATA)>

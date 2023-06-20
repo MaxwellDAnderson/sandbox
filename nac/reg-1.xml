@@ -1,18 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<nac>
+<nac
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="reg-1.xsd">
   <title>
-    <num id="nac/t#" />
-    <label />
-    <text />
+    <num id="/nac/t#" />
+    <heading />
+    <chapeau />
     <chapter>
-      <num id="nac/t#/c#" />
-      <label />
-      <text />
+      <num id="/nac/t#/c#" />
+      <heading />
+      <chapeau />
       <section>
-        <num id="nac/t#/c#/s#" />
+        <num id="/nac/t#/c#/s#" />
         <label />
-        <text />
+        <text>
+          <xref href="" />
+        </text>
+        <subsection>
+          <num id="/nac/t#/c#/s#/ss#" />
+          <label />
+          <text>
+            <xref href="" />
+          </text>
+          <paragraph>
+            <num id="/nac/t#/c#/s#/ss#/p#" />
+            <label />
+            <text />
+            <subparagraph>
+              <num id="/nac/t#/c#/s#/ss#/p#/sp#" />
+              <label />
+              <text />
+              <clause>
+                <num id="/nac/t#/c#/s#/ss#/p#/sp#/c#" />
+                <label />
+                <text />
+                <subclause>
+                  <num id="/nac/t#/c#/s#/ss#/p#/sp#/c#/sc#" />
+                  <label />
+                  <text />
+                  <item>
+                    <num id="/nac/t#/c#/s#/ss#/p#/sp#/cl#/scl#/it#" />
+                    <label />
+                    <text />
+                  </item>
+                </subclause>
+              </clause>
+            </subparagraph>
+          </paragraph>
+        </subsection>
       </section>
     </chapter>
   </title>

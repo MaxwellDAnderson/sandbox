@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xmlns="https://www.w3schools.com" elementFormDefault="qualified" -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="nac">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="title">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="num">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="id" use="required" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="heading" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="chapeau" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="text" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="chapter">
+                <xs:complexType mixed="true">
+                  <xs:sequence>
+                    <xs:element name="num">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="id" type="xs:string" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="heading" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="chapeau" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="text" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="section">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="num">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="id" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="label" type="xs:string" minOccurs="0" maxOccurs="1" />
+                          <xs:element name="text">
+                            <xs:complexType mixed="true">
+                              <xs:sequence>
+                                <xs:element name="xref" minOccurs="0" maxOccurs="unbounded" >
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute name="href" type="xs:string" use="required" />
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="subsection">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="num">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute name="id" type="xs:string" use="required" />
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="label" type="xs:string" minOccurs="0" maxOccurs="1" />
+                                <xs:element name="text">
+                                  <xs:complexType mixed="true">
+                                    <xs:sequence>
+                                      <xs:element name="xref" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute name="href" type="xs:string" use="required" />
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="paragraph">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="num">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute name="id" type="xs:string" use="required" />
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="label" type="xs:string" minOccurs="0" maxOccurs="1" />
+                                      <xs:element name="text">
+                                        <xs:complexType mixed="true">
+                                          <xs:sequence>
+                                            <xs:element name="xref" minOccurs="0" maxOccurs="unbounded">
+                                              <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute name="href" type="xs:string" use="required" />
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="subparagraph">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="num">
+                                              <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute name="id" type="xs:string" use="required" />
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="label" type="xs:string" minOccurs="0" maxOccurs="1" />
+                                            <xs:element name="text">
+                                              <xs:complexType mixed="true">
+                                                <xs:sequence>
+                                                  <xs:element name="xref" minOccurs="0" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                      <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                          <xs:attribute name="href" type="xs:string" use="required" />
+                                                        </xs:extension>
+                                                      </xs:simpleContent>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="clause">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="num">
+                                                    <xs:complexType>
+                                                      <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                          <xs:attribute name="id" type="xs:string" use="required" />
+                                                        </xs:extension>
+                                                      </xs:simpleContent>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element name="label" type="xs:string" minOccurs="0" maxOccurs="1" />
+                                                  <xs:element name="text">
+                                                    <xs:complexType mixed="true">
+                                                      <xs:sequence>
+                                                        <xs:element name="xref" minOccurs="0" maxOccurs="unbounded">
+                                                          <xs:complexType>
+                                                            <xs:simpleContent>
+                                                              <xs:extension base="xs:string">
+                                                                <xs:attribute name="href" type="xs:string" use="required" />
+                                                              </xs:extension>
+                                                            </xs:simpleContent>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element name="subclause">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="num">
+                                                          <xs:complexType>
+                                                            <xs:simpleContent>
+                                                              <xs:extension base="xs:string">
+                                                                <xs:attribute name="id" type="xs:string" use="required" />
+                                                              </xs:extension>
+                                                            </xs:simpleContent>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="label" type="xs:string" minOccurs="0" maxOccurs="1" />
+                                                        <xs:element name="text">
+                                                          <xs:complexType mixed="true">
+                                                            <xs:sequence>
+                                                              <xs:element name="xref" minOccurs="0" maxOccurs="unbounded">
+                                                                <xs:complexType>
+                                                                  <xs:simpleContent>
+                                                                    <xs:extension base="xs:string">
+                                                                      <xs:attribute name="href" type="xs:string" use="required" />
+                                                                    </xs:extension>
+                                                                  </xs:simpleContent>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="item">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="num">
+                                                                <xs:complexType>
+                                                                  <xs:simpleContent>
+                                                                    <xs:extension base="xs:string">
+                                                                      <xs:attribute name="id" type="xs:string" use="required" />
+                                                                    </xs:extension>
+                                                                  </xs:simpleContent>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                              <xs:element name="label" type="xs:string" minOccurs="0" maxOccurs="1" />
+                                                              <xs:element name="text">
+                                                                <xs:complexType mixed="true">
+                                                                  <xs:sequence>
+                                                                    <xs:element name="xref" minOccurs="0" maxOccurs="unbounded">
+                                                                      <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                          <xs:extension base="xs:string">
+                                                                            <xs:attribute name="href" type="xs:string" use="required" />
+                                                                          </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                      </xs:complexType>
+                                                                    </xs:element>
+                                                                  </xs:sequence>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

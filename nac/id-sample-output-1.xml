@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<nac xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="reg-1.xsd">
+  <title>
+    <num id="/nac/100">100</num>
+    <heading>Generic Regulations</heading>
+    <chapter>
+      <num id="/nac/100/1">1</num>
+      <heading>Generic Chapter</heading>
+      <text>Lorem Ipsum</text>
+      <section>
+        <num id="/nac/100/1/1">1.1</num>
+        <label>Generic Section Label</label>
+        <text>Section Text</text>
+        <subsection>
+          <num id="/nac/100/1/1/a">1.1(a)</num>
+          <label>Generic Subsection Label</label>
+          <text>Subsection Text</text>
+          <paragraph>
+            <num id="/nac/100/1/1/a/1">1.1(a)(1)</num>
+            <label>Generic Paragraph Label</label>
+            <text>Paragraph Text</text>
+            <subparagraph>
+              <num id="/nac/100/1/1/a/1/i">1.1(a)(1)(i)</num>
+              <label>Generic Paragraph Label</label>
+              <text>Paragraph Text</text>
+              <clause>
+                <num id="/nac/100/1/1/a/1/i/A">1.1(a)(1)(i)(A)</num>
+                <label>Generic Subparagraph Label</label>
+                <text>Subparagraph Text</text>
+                <subclause>
+                  <num id="/nac/100/1/1/a/1/i/A/1">1.1(a)(1)(i)(A)(1)</num>
+                  <label>Generic Subclause Label</label>
+                  <text>Subclause Text</text>
+                  <item>
+                    <num id="/nac/100/1/1/a/1/i/A/1/i">1.1(a)(1)(i)(A)(1)(i)</num>
+                    <label>Generic Item Label</label>
+                    <text>Item Text</text>
+                  </item>
+                </subclause>
+              </clause>
+            </subparagraph>
+          </paragraph>
+        </subsection>
+      </section>
+    </chapter>
+  </title>
+</nac>

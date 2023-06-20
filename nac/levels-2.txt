@@ -1,0 +1,17 @@
+[title] NAC [chapter]-[section].[subsection][paragraph][subparagraph][clause][subclause]
+
+Title Number is in Arabic
+NAC = Nebraska Administrative Code
+Chapter = Arabic, no leading zeroes
+- = Hyphen
+Section = Arabic, three digits, leading zeroes. (e.g., 001)
+. = Period
+Subsection = Arabic, two digits, leading zero (e.g., 01)
+Paragraph = Capital Roman letter (e.g. A)
+  103 NAC 1-002.02a
+Subparagraph = Arabic numeral, no leading zeroes (e.g. 1)
+  48 NAC 39-011.05C1
+  91 NAC 1-004.10A(1)
+Clause = 
+Subclause = 
+

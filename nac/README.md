@@ -13,7 +13,7 @@ It is no secret that the compilation and organization of a body of law requires 
 >
 >__(b)__ Subtitles, which are lettered consecutively in capitals throughout the title;
 >
->__(c)__ Chapters, which are numbered consecutivel in Roman capitals throughout each title;
+>__(c)__ Chapters, which are numbered consecutively in Roman capitals throughout each title;
 >
 >__(d)__ Subchapters, which are lettered consecutively in capitals throughout the chapter;
 >
@@ -21,7 +21,7 @@ It is no secret that the compilation and organization of a body of law requires 
 >
 >__(f)__ Subparts, which are lettered in capitals;
 >
->__(g)__ Sections, which are numbered in Arabic throughout each part. A section number includes the number of the part followed by a period and the number of the section. For example, the section number for sectoin 15 of part 21 is "§ 21.15"; and
+>__(g)__ Sections, which are numbered in Arabic throughout each part. A section number includes the number of the part followed by a period and the number of the section. For example, the section number for section 15 of part 21 is "§ 21.15"; and
 >
 >__(h)__ Paragraphs, which are designated as follows:
 >
