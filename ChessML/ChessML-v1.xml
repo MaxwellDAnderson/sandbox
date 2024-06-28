@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<event></event>
+<site></site>
+<date></date>
+<round></round>
+<white></white>
+<black></black>
+<result></result>
+<moves>
+  <move>
+    <number>1.</number>
+    <white>e4</white>
+    <black>e5</black>
+  </move>
+</moves>

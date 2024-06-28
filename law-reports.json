@@ -1,0 +1,97 @@
+[
+  {
+    "shortTitle":"Nebraska Reports",
+    "longTitle":"Reports of Cases in the Supreme Court of Nebraska",
+    "author":"",
+    "volume":"1",
+    "abbreviation":"Neb.",
+    "publisher":"Callaghan & Cockcroft",
+    "yearPublished":"1871",
+    "publishedIn":"Chicago",
+    "isbn":""
+  },
+  {
+    "shortTitle":"Nebraska Reports",
+    "longTitle":"Reports of Cases in the Supreme Court of Nebraska",
+    "author":"James M. Woolworth",
+    "volume":"2",
+    "abbreviation":"Neb.",
+    "publisher":"Callaghan & Company",
+    "yearPublished":"1873",
+    "publishedIn":"Chicago",
+    "isbn":""
+  },
+  {
+    "shortTitle":"Nebraska Reports",
+    "longTitle":"Reports of Cases of the Supreme Court of Nebraska. January and July Terms, 1873 and 1874.",
+    "author":"Lorenzo Crounse",
+    "volume":"3",
+    "abbreviation":"Neb.",
+    "publisher":"State Journal Company",
+    "yearPublished":"1901",
+    "publishedIn":"Lincoln",
+    "isbn":""
+  },
+  {
+    "shortTitle":"Hempstead Reports",
+    "longTitle":"Reports of Cases Argued and Determined in the United States Superior Court for the Territory of Arkansas, from 1820 to 1836; and in the United States District Court, from 1836 1849; and in the United States Circuit Court for the District of Arkansas, 9th Circuit, 1839-56",
+    "author":"Samuel H. Hempstead",
+    "volume":"1",
+    "abbreviations":[
+      {
+        "abbr":"Hempstead",
+        "source":"Charles C. Soule, The Lawyer's Reference Manual of Law Books and Citations 8 (1884)",
+        "use_examples":""
+      }
+    ],
+    "publisher":"Little, Brown and Company",
+    "yearPublished":"1856",
+    "publishedIn":"Boston",
+    "isbn":"",
+    "url":"https://catalog.hathitrust.org/Record/010424259"
+  },
+  {
+    "shortTitle":"",
+    "longTitle":"",
+    "author":"",
+    "volume":"",
+    "abbreviation":"",
+    "publisher":"",
+    "yearPublished":"",
+    "publishedIn":"",
+    "isbn":""
+  },
+  {
+    "shortTitle":"",
+    "longTitle":"",
+    "author":"",
+    "volume":"",
+    "abbreviation":"",
+    "publisher":"",
+    "yearPublished":"",
+    "publishedIn":"",
+    "isbn":""
+  },
+  {
+    "shortTitle":"",
+    "longTitle":"",
+    "author":"",
+    "volume":"",
+    "abbreviation":"",
+    "publisher":"",
+    "yearPublished":"",
+    "publishedIn":"",
+    "isbn":""
+  },
+  {
+    "shortTitle":"",
+    "longTitle":"",
+    "author":"",
+    "volume":"",
+    "abbreviation":"",
+    "publisher":"",
+    "yearPublished":"",
+    "publishedIn":"",
+    "isbn":""
+  }
+]
